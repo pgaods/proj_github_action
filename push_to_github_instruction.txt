@@ -1,0 +1,35 @@
+
+
+Here are the steps to push your local files to a remote GitHub repository:
+
+1. **Initialize a Git repository**:
+   Open your terminal or command prompt and navigate to the root directory of your project:
+   ```bash
+   cd C:\users\blah
+   git init
+   ```
+
+2. **Add your files to the staging area**:
+   ```bash
+   git add src/train.py src/model_selection.py config/params.yml src/deploy/register_model.py
+   ```
+
+3. **Commit your changes**:
+   ```bash
+   git commit -m "Initial commit"
+   ```
+
+4. **Add the remote repository**:
+   Replace `your-repo-url` with the URL of your GitHub repository:
+   ```bash
+   git remote add origin your-repo-url
+   ```
+
+5. **Push your changes to the remote repository**:
+   ```bash
+   git push -u origin master
+   ```
+
+If you haven't created a GitHub repository yet, you can do so by logging into GitHub, clicking on the "New" button, and following the prompts to create a new repository. Once created, you can use the repository URL in step 4.
+
+Let me know if you need any more help!

@@ -1,0 +1,11 @@
+loguru==0.7.2
+scikit-learn==1.5.2
+pytest==8.3.3
+unittest==1.4.34
+flaml==2.3.2
+prophet==1.1.6
+pmdarima==2.0.4
+sktime==0.34.0
+ligthgbm==4.5.0
+catboost==1.2.7
+openai==1.54.4
