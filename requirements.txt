@@ -9,3 +9,4 @@ sktime==0.34.0
 ligthgbm==4.5.0
 catboost==1.2.7
 openai==1.54.4
+xgboost==2.1.2
