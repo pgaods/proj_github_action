@@ -32,4 +32,7 @@ Here are the steps to push your local files to a remote GitHub repository:
 
 If you haven't created a GitHub repository yet, you can do so by logging into GitHub, clicking on the "New" button, and following the prompts to create a new repository. Once created, you can use the repository URL in step 4.
 
-Let me know if you need any more help!
+If you have created a github repo with a README file and LICENSE file but those are in the remote server (github), you need to fetch it first to local git folder. You can run git fetch origin.
+
+When you run this statement while interacting with GitHub, it retrieves updates from the remote repository named “origin” (which is typically the default name for the remote repository you cloned from). 
+This command downloads commits, files, and references from the remote repository to your local repository, but it doesn’t merge or modify your working files. Essentially, it updates your local copy of the remote branches without altering your current branch.
