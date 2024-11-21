@@ -1,0 +1,8 @@
+if you want to rename a file, you can use git mv:
+
+$ git mv ".\scripts\git commands\push_to_github_instruction.txt" ".\scripts\git commands\push to github.txt"
+
+This actually renames a file physically.
+
+To delete a file you can do git rm:
+$ git rm ".\scripts\git commands\blah.txt" -f
