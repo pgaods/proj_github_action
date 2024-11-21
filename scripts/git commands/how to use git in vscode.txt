@@ -1,0 +1,111 @@
+Using Git commands in Visual Studio Code (VSCode) is straightforward and convenient. Here’s a step-by-step guide to help you get started:
+
+1. **Open VSCode**:
+   - Launch VSCode and open your project folder.
+
+2. **Initialize a Git Repository**:
+   - Open the integrated terminal (`Ctrl + `) and run:
+     ```bash
+     git init
+     ```
+   - Alternatively, you can use the Source Control view (`Ctrl + Shift + G`) and click on "Initialize Repository".
+
+3. **Clone a Repository**:
+   - In the integrated terminal, run:
+     ```bash
+     git clone <repository_url>
+     ```
+   - You can also use the Command Palette (`Ctrl + Shift + P`), type "Git: Clone", and enter the repository URL.
+
+4. **Stage and Commit Changes**:
+   - Make changes to your files.
+   - Go to the Source Control view (`Ctrl + Shift + G`), where you’ll see your changes listed.
+   - Click the `+` icon next to the files you want to stage.
+   - Enter a commit message in the input box at the top and click the checkmark icon to commit.
+
+5. **Push and Pull Changes**:
+   - To push changes to a remote repository, use the integrated terminal:
+     ```bash
+     git push
+     ```
+   - To pull changes from a remote repository:
+     ```bash
+     git pull
+     ```
+
+6. **Using GitLens Extension**:
+   - Install the GitLens extension for enhanced Git capabilities.
+   - GitLens provides features like blame annotations, repository history, and more, directly within VSCode.
+
+7. **Using the Command Palette**:
+   - The Command Palette (`Ctrl + Shift + P`) is very powerful. You can perform many Git operations by typing commands like "Git: Commit", "Git: Push", "Git: Pull", etc.
+
+8. **Integrated Terminal**:
+   - Use the integrated terminal for any Git commands you prefer to run manually.
+
+Here’s a quick example of how you might use these features:
+
+1. **Initialize a Repository**:
+   ```bash
+   git init
+   ```
+
+2. **Stage and Commit Changes**:
+   ```bash
+   git add .
+   git commit -m "Initial commit"
+   ```
+
+3. **Push to Remote**:
+   ```bash
+   git remote add origin <repository_url>
+   git push -u origin master
+   ```
+
+VSCode makes it easy to manage your Git workflow with its integrated tools and extensions. 
+
+Yes, you should point your working directory to the parent directory that contains all the folders and subfolders you want to add. This way, you can use the `git add` command to stage multiple files across different directories. Here’s how you can do it:
+
+1. **Navigate to the Parent Directory**:
+   - Open your terminal and navigate to the parent directory of your project:
+     ```bash
+     cd /path/to/your/project
+     ```
+
+2. **Add All Files and Subfolders**:
+   - To add all files and subfolders within the parent directory, use:
+     ```bash
+     git add .
+     ```
+   - The `.` (dot) represents the current directory and all its contents recursively.
+
+3. **Add Specific Files or Folders**:
+   - If you want to add specific files or folders, you can specify their paths:
+     ```bash
+     git add folder1/file1.txt folder2/file2.txt
+     ```
+
+4. **Check the Status**:
+   - You can check the status of your staged files using:
+     ```bash
+     git status
+     ```
+
+Here’s an example workflow:
+
+1. **Navigate to the Parent Directory**:
+   ```bash
+   cd /path/to/your/project
+   ```
+
+2. **Add All Files and Subfolders**:
+   ```bash
+   git add .
+   ```
+
+3. **Commit the Changes**:
+   ```bash
+   git commit -m "Added multiple files from different folders"
+   ```
+
+Using the parent directory ensures that all changes within the project are included. 
